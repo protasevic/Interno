@@ -1,0 +1,128 @@
+.footer {
+    margin-top: 80px;
+}
+.footer-content {
+    display: flex;
+    column-gap: 110px;
+    margin-bottom: 80px;
+}
+
+
+.footer-logo {
+    max-width: 393px;
+}
+.footer-logo-img {
+    margin-bottom: 15px;
+}
+
+.footer-text {
+max-width: 326px;
+line-height: 33px;
+letter-spacing: 0.22px;
+margin-bottom: 30px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    text-align: center;
+}
+
+.socials a {
+    width: unset;
+    height: unset;
+}
+
+
+.img-facebook {
+    width: 10px;
+    height: 18px;
+}
+.img-twitter {
+    width: 18px;
+    height: 17px;
+}
+
+.img-in {
+    width: 16px;
+    height: 18px;
+}
+
+.img-insta {
+    width: 17px;
+    height: 18px;
+}
+
+.footer-pages {
+   max-width: 210px;
+}
+.footer-point-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    color: #292F36;
+    line-height: 37.5px;
+    letter-spacing: 0.22px;
+    margin-bottom: 21px;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.footer-explore {
+    max-width: 210px;
+}
+
+.footer-contact {
+    max-width: 337px;
+}
+
+.point.point-text {
+    max-width: 318px;
+}
+
+@media(max-width: 800px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 44px;
+    }
+
+    .points {
+        row-gap: 17px;
+    }
+
+    .footer-pages, .footer-explore, .footer-contact {
+        width: unset;
+    }
+}
+
+@media(max-width: 450px) {
+    .footer-text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+.footer-last-text p {
+    font-size: 18px;
+}
+
+.footer-last-text {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.footer-last-text p {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+}
+
+.footer-last-text span {
+    color: #CDA274;
+}
+
+
+

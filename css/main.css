@@ -1,0 +1,21 @@
+@import url(../css/reset.css);
+
+body {
+    font-family: "Jost", sans-serif;
+    color: #4D5053;
+    font-size: 22px;
+}
+
+
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.none {
+    display: none;
+}
+
+/* font-family: "DM Serif Display", serif; */

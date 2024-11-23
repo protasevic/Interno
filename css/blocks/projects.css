@@ -1,0 +1,143 @@
+.projects {
+    padding-top: 115px;
+}
+
+.projects-top {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.projects-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 47px;
+    color: #292F36;
+    letter-spacing: 0.22px;
+    line-height: 62.4px;
+    margin-bottom: 20px;
+}
+
+.projects-text {
+    display: inline-block;
+    max-width: 786px;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+}
+
+    .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 590px);
+        column-gap: 20px;
+        row-gap: 60px;
+}
+
+.project-img {
+    margin-bottom: 34px;
+}
+.project-img img {
+    border-top-right-radius: 80px;
+}
+
+.project-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card-title {
+font-family: "DM Serif Display", serif;
+color: #292F36;
+font-size: 24px;
+line-height: 37.5px;
+letter-spacing: 0.22px;
+white-space: nowrap;
+}
+
+.card-style {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+}
+
+.project-card-btn a {
+    padding: 19px 30px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
+}
+
+.project-card-btn img {
+    margin-top: 10px;
+    width: 9px;
+    height: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1180px) {
+    .projects-cards {
+    justify-content: center;
+    grid-template-columns: repeat(2, 494px);
+    column-gap: 20px;
+    row-gap: 60px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .projects-cards {
+    grid-template-columns: repeat(1, 494px); 
+}
+}
+
+@media(max-width:950px) {
+    .projects-title {
+        font-size: 45px;
+        line-height: 56.4px;
+        margin-bottom:15px;
+    }
+
+    .projects-top {
+        margin-bottom: 53px;
+    }
+}
+
+@media(max-width:575px) {
+    .projects-title {
+        font-size: 40px;
+        line-height: 43.4px;
+        margin-bottom: 10px;
+    }
+
+    .projects-top {
+        margin-bottom: 26px;
+    }
+
+    .projects-text {
+        line-height: 31px;
+        font-size: 18px;
+    }
+    .projects-cards {
+        grid-template-columns: repeat(1, 328px);
+    }
+    .project-card-title {
+        font-size: 20px;
+        line-height: 27.5px;
+    }
+
+    .card-style {
+        font-size: 18px;
+    }
+
+    .project-card-btn a {
+        padding: 10px 23px;
+    }
+}
+
+

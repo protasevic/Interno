@@ -1,0 +1,23 @@
+.partners {
+    padding-top: 140px;
+}
+.partners-img img {
+flex-shrink: 0;
+}
+
+.partners-img {
+justify-content: center;
+    display: flex;
+}
+
+
+@media(max-width:900px) {
+    .partners-img img {
+        flex-shrink: 0;
+        width: 80%;
+    }
+
+    .partners {
+        padding-top: 51px;
+    }
+}

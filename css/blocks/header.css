@@ -1,0 +1,284 @@
+.header {
+    padding-top: 26px;
+    
+}
+
+
+.header-nav {
+    display: flex;
+    column-gap: 484px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.header-logo img {
+    max-width: unset;
+}
+
+
+
+.header-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.header-list li a {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* MENU-icon-wrapper */
+
+.menu-icon-wrapper {
+    /*   background: red; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+}
+
+.menu-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.menu-icon::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.menu-icon.menu-icon-active {
+    background-color: transparent;
+}
+
+.menu-icon.menu-icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+
+
+    
+
+
+.header-content {
+    background: url(../../img/background-img.png);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 831px;
+    padding: 195px 0 250px;
+}
+
+.header-title {
+    color: #292F36;
+    font-size: 80px;
+    font-family: "DM Serif Display", serif;
+    line-height: 96px;
+    letter-spacing: 0.22px;
+    max-width: 595px;
+    margin-bottom: 19px;
+}
+
+.header-text {
+    line-height: 33px;
+    margin-bottom: 35px;
+    letter-spacing: 0.22px;
+    max-width: 577px;
+}
+
+.header-btn {
+    position: relative;
+    padding: 22px 67px 22px 34px;
+    background-color: #292F36;
+    border-radius: 18px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.header-btn a {
+    color: #ffff;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.72px;
+}
+
+.header-btn::after {
+    position: absolute;
+    content: "";
+    background-image: url(../../img/icons8-стрелка-25.png);
+    background-repeat: no-repeat;
+    right: 23px;
+    top: 29px;
+    width: 25px;
+    height: 25px;
+}
+
+
+
+@media(max-width:1197px) {
+    .header-nav {
+        column-gap: 200px;
+    }
+}
+
+
+
+@media(max-width:915px) {
+    .header-nav {
+        column-gap: 100px;
+    }
+
+    .header-content {
+        height: 550px;
+        padding: 100px 0 180px;
+        overflow: hidden;
+    }
+    .header-title {
+        font-size: 50px;
+        line-height: 56px;
+        margin-bottom: 7px;
+    }
+
+    .header-text {
+        line-height: 25px;
+        margin-bottom: 22px;
+        font-size: 20px;
+}
+
+.header-btn {
+    padding: 15px 55px 15px 27px;
+}
+
+
+.header-btn a {
+    font-size: 16px;
+    line-height: 24px;
+}
+.header-btn::after {
+    right: 12px;
+        top: 21px;
+        width: 25px;
+        height: 25px;
+}
+}
+
+@media(max-width:852px) {
+    .header-text {
+        max-width: 425px;
+    }
+}
+
+
+@media(max-width:815px) {
+    .header-list {
+        display: none;
+    }
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        right: 50px;
+    }
+    .nav-mobile {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+
+		flex-direction: column;
+		align-items: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		background: linear-gradient(209deg, #428e5f -17.38%, #112120 78.4%), #204434;
+	}
+
+}
+
+
+
+
+@media(max-width:530px) {
+    .header-content {
+        height: 305px;
+        padding: 40px 0 84px;
+        overflow: hidden;
+    }
+    .header {
+        padding-top: 15px;
+    }
+
+    .header-nav {
+        padding-bottom: 20px;
+    }
+
+    .header-logo img {
+        width: 135px;
+        height: 35px;
+    }
+
+
+
+     
+        .header-btn {
+            padding: 10px 45px 10px 19px;
+        }
+
+        .header-btn::after {
+            right: 12px;
+            top: 17px;
+        }
+
+        .header-text {
+            line-height: 21px;
+            margin-bottom: 22px;
+            font-size: 16px;
+            max-width: 284px;
+        }
+
+        .header-title {
+            font-size: 31px;
+            line-height: 34px;
+            margin-bottom: 6px;
+        }
+    }
+
+
+
